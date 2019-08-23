@@ -33,11 +33,13 @@ public class Engine {
     // reinserted particles into the octTree.
     public void stepForward () {
 
+
         for (Particle p : particleList) {
             particleTree.updateForce(p);
             p.updatePosAndVelo(solver, dt);
             p.clearForce();
         }
+        particleTree.clear();
         for (Particle p : particleList) {
             particleTree.insert(p);
         }

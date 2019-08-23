@@ -3,6 +3,7 @@ package sample;
 import com.sun.javafx.scene.control.behavior.TwoLevelFocusBehavior;
 
 import javax.jws.Oneway;
+import javax.print.attribute.standard.Severity;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -28,6 +29,22 @@ public class OctTree {
     public OctTree(Octant octant) {
         this.octant = octant;
         particleCounts = 0;
+    }
+
+
+    public void clear() {
+        particleCounts = 0;
+        particle = null;
+        ONE = null;
+        TWO = null;
+        THREE = null;
+        FOUR = null;
+        FIVE = null;
+        SIX = null;
+        SEVEN = null;
+        EIGHT = null;
+
+
     }
 
 
@@ -84,22 +101,22 @@ public class OctTree {
          */
 
         Particle currParticle = particle;
-        if (particle == null) {
+        if (currParticle == null) {
             return;
         }
-        if (particle == p) {
+        if (currParticle == p) {
             return;
         }
         // if external node
         if (particleCounts == 1) {
             // update p's force
-            p.addForce(particle);
+            p.addForce(currParticle);
         } else {
             double indicator = octant.length() / Particle.distance(p, particle);
 
             // the particle is far away
             if (indicator < THETA) {
-                p.addForce(particle);
+                p.addForce(currParticle);
             } else {
                 // run recursion on the next octant for p
 

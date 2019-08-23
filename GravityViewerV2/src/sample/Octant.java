@@ -25,9 +25,9 @@ public class Octant {
 
     public boolean contains (double x, double y, double z) {
 
-        boolean inX = (x < pivotX && x >= pivotX - length);
-        boolean inY = (y > pivotY && y <= pivotY + length);
-        boolean inZ = (z > pivotZ && z <= pivotZ + length);
+        boolean inX = (x <= pivotX && x > pivotX - length);
+        boolean inY = (y >= pivotY && y < pivotY + length);
+        boolean inZ = (z >= pivotZ && z < pivotZ + length);
 
         return inX && inY && inZ;
     }

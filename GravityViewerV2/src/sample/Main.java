@@ -34,7 +34,7 @@ public class Main extends Application {
     final Xform cameraXform3 = new Xform();
     private static final double AXIS_LENGTH = 250.0;
     private static final int WORLD_SIZE = 1000;
-    private static final int STAR_COUNT = 100;
+    private static final int STAR_COUNT = 200;
     private static final double CAMERA_INITIAL_DISTANCE = -10000;
     private static final double CAMERA_INITIAL_X_ANGLE = 30.0;
     private static final double CAMERA_INITIAL_Y_ANGLE = 300.0;
@@ -245,13 +245,13 @@ public class Main extends Application {
             double rx = random.nextInt(WORLD_SIZE) - WORLD_SIZE / 2;
             double ry = random.nextInt(WORLD_SIZE) - WORLD_SIZE / 2;
             double rz = random.nextInt(WORLD_SIZE) - WORLD_SIZE / 2;
-            double vx = random.nextInt(80) - 40;
-            double vy = random.nextInt(80) - 40;
-            double vz = random.nextInt(80) - 40;
+            double vx = random.nextInt(8) - 4;
+            double vy = random.nextInt(8) - 4;
+            double vz = random.nextInt(8) - 4;
 //            double vx = 0;
 //            double vy = 0;
 //            double vz = 0;
-            double mass = random.nextInt(30);
+            double mass = random.nextInt(100) + 1;
             double radius = random.nextInt(30);
             Particle p = new Particle(rx, ry, rz, vx, vy, vz, mass, radius);
             particleList.add(p);
@@ -278,17 +278,17 @@ public class Main extends Application {
 
 
         Solver solver = new EulerSolver();
-        Engine engine = new Engine(WORLD_SIZE * 2, WORLD_SIZE * 2, WORLD_SIZE * 2,
-                WORLD_SIZE * 4, solver, pList, DT);
+        Engine engine = new Engine(WORLD_SIZE / 2, -WORLD_SIZE / 2, -WORLD_SIZE / 2,
+                WORLD_SIZE, solver, pList, DT);
 
         // _______________________________________________ running simulator
-//        for (int i = 0; i < ITER; i++) {
-//            world.getChildren().removeAll(particleGroup);
-//
-//            engine.stepForward();
-//            buildParticles(pList);
-//            Thread.sleep(1);
-//        }
+        for (int i = 0; i < ITER; i++) {
+            world.getChildren().removeAll(particleGroup);
+
+            engine.stepForward();
+            buildParticles(pList);
+            Thread.sleep(1);
+        }
         //________________________________________________
 
         Scene scene = new Scene(root, 1024, 600, true);

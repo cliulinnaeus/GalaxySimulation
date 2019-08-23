@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GravityViewerV2/sample/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GravityViewerV2/sample/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GravityViewerV2/sample/Octant.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GravityViewerV2/sample/Octant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GravityViewerV2/sample/TestOctTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GravityViewerV2/sample/TestOctTree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GravityViewerV2/sample/TestOctant.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GravityViewerV2/sample/TestOctant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Engine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Engine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/OctTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/OctTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Octant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Octant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Particle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Particle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/TestOctTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/TestOctTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/TestOctant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/TestOctant.java" afterDir="false" />
+    </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -57,14 +71,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-130">
-              <caret line="287" selection-start-line="287" selection-end-line="287" />
+            <state relative-caret-position="-2703">
+              <caret line="87" column="30" selection-start-line="87" selection-start-column="30" selection-end-line="87" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#10751#10752#0" expanded="true" />
+                <element signature="e#10749#10750#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -73,8 +87,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/OctTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
-              <caret line="52" selection-start-line="52" selection-end-line="52" />
+            <state relative-caret-position="148">
+              <caret line="112" selection-start-line="112" selection-end-line="112" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -85,11 +99,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Octant.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="35" selection-start-line="35" selection-end-line="35" />
+            <state relative-caret-position="51">
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#900#901#0" expanded="true" />
                 <element signature="e#929#930#0" expanded="true" />
+                <element signature="e#1049#1050#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -98,8 +114,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Particle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="-153">
+              <caret line="9" column="38" lean-forward="true" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+              <folding>
+                <element signature="e#562#563#0" expanded="true" />
+                <element signature="e#607#608#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -152,32 +172,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Engine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="40" selection-start-line="40" selection-end-line="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/sample/TestOctTree.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="80">
+              <caret line="37" selection-start-line="37" selection-end-line="37" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/sample.fxml">
+        <entry file="file://$PROJECT_DIR$/src/sample/TestOctTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+            <state relative-caret-position="544">
+              <caret line="35" selection-start-line="35" selection-end-line="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
-          <provider editor-type-id="JavaFX-Scene-Builder" />
         </entry>
       </file>
     </leaf>
@@ -195,13 +205,14 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/sample/Controller.java" />
         <option value="$PROJECT_DIR$/src/sample/Vector.java" />
-        <option value="$PROJECT_DIR$/src/sample/TestOctant.java" />
-        <option value="$PROJECT_DIR$/src/sample/Octant.java" />
         <option value="$PROJECT_DIR$/src/sample/Solver.java" />
         <option value="$PROJECT_DIR$/src/sample/EulerSolver.java" />
         <option value="$PROJECT_DIR$/src/sample/Xform.java" />
@@ -209,21 +220,23 @@
         <option value="$PROJECT_DIR$/src/sample/CelestrialObj.java" />
         <option value="$PROJECT_DIR$/src/sample/Planet.java" />
         <option value="$PROJECT_DIR$/src/sample/Star.java" />
-        <option value="$PROJECT_DIR$/src/sample/Particle.java" />
-        <option value="$PROJECT_DIR$/src/sample/Engine.java" />
-        <option value="$PROJECT_DIR$/src/sample/Main.java" />
-        <option value="$PROJECT_DIR$/src/sample/OctTree.java" />
         <option value="$PROJECT_DIR$/src/sample/TestOctTree.java" />
+        <option value="$PROJECT_DIR$/src/sample/Octant.java" />
+        <option value="$PROJECT_DIR$/src/sample/TestOctant.java" />
+        <option value="$PROJECT_DIR$/src/sample/Engine.java" />
+        <option value="$PROJECT_DIR$/src/sample/OctTree.java" />
+        <option value="$PROJECT_DIR$/src/sample/Particle.java" />
+        <option value="$PROJECT_DIR$/src/sample/Main.java" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1614" />
-    <option name="height" value="876" />
+    <option name="x" value="420" />
+    <option name="width" value="981" />
+    <option name="height" value="1020" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectReloadState">
     <option name="STATE" value="0" />
   </component>
@@ -271,7 +284,7 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566363508246" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566585638394" />
     <property name="dynamic.classpath" value="false" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -332,7 +345,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestOctTree.testOctTree" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestOctTree.testInsert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="GravityViewerV2" />
       <extension name="coverage">
         <pattern>
@@ -342,7 +355,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="sample" />
       <option name="MAIN_CLASS_NAME" value="sample.TestOctTree" />
-      <option name="METHOD_NAME" value="testOctTree" />
+      <option name="METHOD_NAME" value="testInsert" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="TEST_SEARCH_SCOPE">
@@ -363,6 +376,66 @@
       <option name="PACKAGE_NAME" value="sample" />
       <option name="MAIN_CLASS_NAME" value="sample.TestOctTree" />
       <option name="METHOD_NAME" value="testParticleCount" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestOctant.testContains" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GravityViewerV2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sample.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="sample" />
+      <option name="MAIN_CLASS_NAME" value="sample.TestOctant" />
+      <option name="METHOD_NAME" value="testContains" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestOctant.testRandomContains" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GravityViewerV2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sample.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="sample" />
+      <option name="MAIN_CLASS_NAME" value="sample.TestOctant" />
+      <option name="METHOD_NAME" value="testRandomContains" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestOctant.testSubTree" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GravityViewerV2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sample.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="sample" />
+      <option name="MAIN_CLASS_NAME" value="sample.TestOctant" />
+      <option name="METHOD_NAME" value="testSubTree" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="TEST_SEARCH_SCOPE">
@@ -404,8 +477,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestOctant.testSubTree" />
+        <item itemvalue="JUnit.TestOctant.testRandomContains" />
+        <item itemvalue="JUnit.TestOctant.testContains" />
+        <item itemvalue="JUnit.TestOctTree.testInsert" />
         <item itemvalue="JUnit.TestOctTree.testParticleCount" />
-        <item itemvalue="JUnit.TestOctTree.testOctTree" />
       </list>
     </recent_temporary>
   </component>
@@ -424,14 +500,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestOctTree_testOctTree - 2019.08.20 at 18h 44m 00s.xml">
-      <configuration name="TestOctTree.testOctTree" configurationId="JUnit" />
+    <history-entry file="TestOctant_testContains - 2019.08.21 at 09h 56m 46s.xml">
+      <configuration name="TestOctant.testContains" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestOctTree_testOctTree - 2019.08.20 at 18h 47m 20s.xml">
-      <configuration name="TestOctTree.testOctTree" configurationId="JUnit" />
+    <history-entry file="TestOctant_testRandomContains - 2019.08.21 at 10h 00m 08s.xml">
+      <configuration name="TestOctant.testRandomContains" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestOctTree_testParticleCount - 2019.08.20 at 18h 47m 43s.xml">
-      <configuration name="TestOctTree.testParticleCount" configurationId="JUnit" />
+    <history-entry file="TestOctant_testRandomContains - 2019.08.21 at 10h 00m 20s.xml">
+      <configuration name="TestOctant.testRandomContains" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestOctant_testSubTree - 2019.08.21 at 18h 27m 59s.xml">
+      <configuration name="TestOctant.testSubTree" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestOctant_testSubTree - 2019.08.21 at 18h 28m 15s.xml">
+      <configuration name="TestOctant.testSubTree" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestOctant_testSubTree - 2019.08.21 at 18h 28m 46s.xml">
+      <configuration name="TestOctant.testSubTree" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestOctant_testSubTree - 2019.08.21 at 18h 29m 36s.xml">
+      <configuration name="TestOctant.testSubTree" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestOctant_testSubTree - 2019.08.21 at 18h 30m 05s.xml">
+      <configuration name="TestOctant.testSubTree" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestOctant_testSubTree - 2019.08.22 at 14h 28m 52s.xml">
+      <configuration name="TestOctant.testSubTree" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestOctant_testSubTree - 2019.08.22 at 14h 32m 18s.xml">
+      <configuration name="TestOctant.testSubTree" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
@@ -439,6 +536,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.19595142" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -449,8 +547,8 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.38543516" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.19360569" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.1687389" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.5719361" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -484,16 +582,22 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/sample/Main.java</url>
-          <line>287</line>
+          <url>file://$PROJECT_DIR$/src/sample/TestOctTree.java</url>
+          <line>21</line>
           <properties />
-          <option name="timeStamp" value="1" />
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/sample/TestOctTree.java</url>
-          <line>20</line>
+          <line>34</line>
           <properties />
-          <option name="timeStamp" value="2" />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/sample/OctTree.java</url>
+          <line>112</line>
+          <properties />
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -503,13 +607,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/sample/TestOctant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Vector.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -609,35 +706,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Octant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#929#930#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-130">
-          <caret line="287" selection-start-line="287" selection-end-line="287" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#10751#10752#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Engine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/RK4Solver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -652,29 +720,81 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Particle.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/TestOctTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/OctTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="52" selection-start-line="52" selection-end-line="52" />
+        <state relative-caret-position="544">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/TestOctTree.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/TestOctant.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        <state>
+          <caret line="66" column="51" selection-start-line="66" selection-start-column="51" selection-end-line="66" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/javafx-src.zip!/com/sun/javafx/application/LauncherImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="862" selection-start-line="862" selection-end-line="862" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Engine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Octant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#900#901#0" expanded="true" />
+            <element signature="e#929#930#0" expanded="true" />
+            <element signature="e#1049#1050#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/OctTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="112" selection-start-line="112" selection-end-line="112" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Particle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-153">
+          <caret line="9" column="38" lean-forward="true" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+          <folding>
+            <element signature="e#562#563#0" expanded="true" />
+            <element signature="e#607#608#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2703">
+          <caret line="87" column="30" selection-start-line="87" selection-start-column="30" selection-end-line="87" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#10749#10750#0" expanded="true" />
           </folding>
         </state>
       </provider>

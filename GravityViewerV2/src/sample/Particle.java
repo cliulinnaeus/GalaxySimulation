@@ -7,7 +7,7 @@ public class Particle {
     protected double rx, ry, rz;
     protected double vx, vy, vz;
     protected double fx, fy, fz;
-    public final static double G = 6.67E-11;
+    public final static double G = 10;
 
 
     public Particle(double rx, double ry, double rz,

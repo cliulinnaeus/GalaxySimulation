@@ -1,5 +1,9 @@
 package sample;
 
+import javafx.animation.Animation;
+import javafx.animation.KeyFrame;
+import javafx.animation.Timeline;
+import javafx.animation.TranslateTransition;
 import javafx.application.Application;
 import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
@@ -17,6 +21,7 @@ import javafx.scene.transform.Translate;
 import javafx.stage.Stage;
 import javafx.scene.paint.PhongMaterial;
 import javafx.scene.shape.Box;
+import javafx.util.Duration;
 
 import javax.jnlp.PersistenceService;
 import java.lang.reflect.Array;
@@ -34,8 +39,8 @@ public class Main extends Application {
     final Xform cameraXform3 = new Xform();
     private static final double AXIS_LENGTH = 250.0;
     private static final int WORLD_SIZE = 1000;
-    private static final int STAR_COUNT = 200;
-    private static final double CAMERA_INITIAL_DISTANCE = -10000;
+    private static final int STAR_COUNT = 3;
+    private static final double CAMERA_INITIAL_DISTANCE = -WORLD_SIZE * 5;
     private static final double CAMERA_INITIAL_X_ANGLE = 30.0;
     private static final double CAMERA_INITIAL_Y_ANGLE = 300.0;
     private static final double CAMERA_NEAR_CLIP = 0.1;
@@ -49,8 +54,7 @@ public class Main extends Application {
     private static final double LUMINOSITY_OF_THE_SUN = 1.0;
     private static final double A = 3.5;
     private static final Color BACKGROUND_COLOR = Color.BLACK;
-    private static final double DT = 0.1;
-    private static final int ITER = 1000;
+    private static final double DT = 0.01;
     double mousePosX;
     double mousePosY;
     double mouseOldX;
@@ -126,25 +130,27 @@ public class Main extends Application {
             } else if (500 <= luminosity && luminosity < 1000) {
                 color = Color.LIGHTBLUE;
             } else {
-                color = Color.BLUE;
+                color = Color.LIGHTBLUE;
             }
 
             PhongMaterial material = new PhongMaterial();
             material.setSpecularColor(color);
             material.setDiffuseColor(color.brighter());
 
-            Xform celestrialObjForm = new Xform();
+            Xform starForm = new Xform();
 
-            Sphere celestrialObjSphere = new Sphere(p.radius);
+            Sphere starSphere = new Sphere(p.radius);
 
-            celestrialObjSphere.setMaterial(material);
-            celestrialObjSphere.setTranslateX(p.rx);
-            celestrialObjSphere.setTranslateY(p.ry);
-            celestrialObjSphere.setTranslateZ(p.rz);
+            starSphere.setMaterial(material);
+            starSphere.setTranslateX(p.rx);
+            starSphere.setTranslateY(p.ry);
+            starSphere.setTranslateZ(p.rz);
 
-            celestrialObjForm.getChildren().add(celestrialObjSphere);
-            world.getChildren().add(celestrialObjForm);
+//            starForm.getChildren().add(starSphere);
+
+            particleGroup.getChildren().add(starSphere);
         }
+            world.getChildren().add(particleGroup);
 
 
 
@@ -156,7 +162,7 @@ public class Main extends Application {
 
 
     public void clearParticles() {
-
+        world.getChildren().removeAll();
     }
 
 
@@ -245,9 +251,9 @@ public class Main extends Application {
             double rx = random.nextInt(WORLD_SIZE) - WORLD_SIZE / 2;
             double ry = random.nextInt(WORLD_SIZE) - WORLD_SIZE / 2;
             double rz = random.nextInt(WORLD_SIZE) - WORLD_SIZE / 2;
-            double vx = random.nextInt(8) - 4;
-            double vy = random.nextInt(8) - 4;
-            double vz = random.nextInt(8) - 4;
+            double vx = random.nextInt(12) - 6;
+            double vy = random.nextInt(12) - 6;
+            double vz = random.nextInt(12) - 6;
 //            double vx = 0;
 //            double vy = 0;
 //            double vz = 0;
@@ -263,10 +269,11 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        primaryStage.setResizable(false);
+        primaryStage.setResizable(true);
 
         root.getChildren().add(world);
         root.setDepthTest(DepthTest.ENABLE);
+        world.getChildren().removeAll(particleGroup);
 
 
         List<Particle> pList = makeParticleList(STAR_COUNT);
@@ -276,19 +283,35 @@ public class Main extends Application {
         buildParticles(pList);
 
 
+//        Timeline tl = new Timeline();
+
 
         Solver solver = new EulerSolver();
         Engine engine = new Engine(WORLD_SIZE / 2, -WORLD_SIZE / 2, -WORLD_SIZE / 2,
                 WORLD_SIZE, solver, pList, DT);
 
         // _______________________________________________ running simulator
-        for (int i = 0; i < ITER; i++) {
-            world.getChildren().removeAll(particleGroup);
+
+        Timeline loop = new Timeline(new KeyFrame(Duration.millis(10), event -> {
 
             engine.stepForward();
             buildParticles(pList);
-            Thread.sleep(1);
-        }
+
+        }));
+
+        loop.setCycleCount(Timeline.INDEFINITE);
+        loop.play();
+
+
+
+
+
+
+
+
+
+
+
         //________________________________________________
 
         Scene scene = new Scene(root, 1024, 600, true);

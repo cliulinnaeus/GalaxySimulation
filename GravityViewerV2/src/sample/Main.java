@@ -39,8 +39,8 @@ public class Main extends Application {
     final Xform cameraXform3 = new Xform();
     private static Timeline loop;
     private static boolean paused = true;
-    private static final int WORLD_SIZE = 20000;
-    private static final int STAR_COUNT = 10000;
+    private static final int WORLD_SIZE = 10000;
+    private static final int STAR_COUNT = 3000;
     private static final double AXIS_LENGTH = WORLD_SIZE;
     private static final double CAMERA_INITIAL_DISTANCE = -WORLD_SIZE * 3;
     private static final double CAMERA_INITIAL_X_ANGLE = 30.0;
@@ -132,7 +132,7 @@ public class Main extends Application {
             } else if (500 <= luminosity && luminosity < 1000) {
                 color = Color.GREEN;
             } else {
-                color = Color.LIGHTBLUE;
+                color = Color.BLUEVIOLET;
             }
 
             PhongMaterial material = new PhongMaterial();
@@ -262,15 +262,19 @@ public class Main extends Application {
         for (int i = 0; i < count; i++) {
             double rx = random.nextInt(WORLD_SIZE) - WORLD_SIZE / 2;
             double ry = random.nextInt(WORLD_SIZE) - WORLD_SIZE / 2;
+//            double rz = random.nextInt(WORLD_SIZE) - WORLD_SIZE / 2;
             double rz = random.nextInt(WORLD_SIZE) - WORLD_SIZE / 2;
-            double vx = random.nextInt(500) - 250;
-            double vy = random.nextInt(500) - 250;
-            double vz = random.nextInt(500) - 250;
+//            double vx = random.nextInt(500) - 250;
+//            double vy = random.nextInt(500) - 250;
+//            double vz = random.nextInt(500) - 250;
+            double vx = -ry /3;
+            double vy = rx /3;
+            double vz = random.nextInt(50) - 25;
 //            double vx = 0;
 //            double vy = 0;
 //            double vz = 0;
-            double mass = random.nextInt(100) + 0.1;
-            double radius = random.nextInt(30);
+            double mass = random.nextInt(1000) + 0.1;
+            double radius = random.nextInt(100);
             Particle p = new Particle(rx, ry, rz, vx, vy, vz, mass, radius);
             particleList.add(p);
         }

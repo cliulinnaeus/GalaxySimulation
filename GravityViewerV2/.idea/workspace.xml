@@ -2,19 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/sample/DrawScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/MainScreen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GravityViewerV2/sample/Main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GravityViewerV2/sample/Main$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GravityViewerV2/sample/Main$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GravityViewerV2/sample/Main$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GravityViewerV2/sample/Main$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GravityViewerV2/sample/Main$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GravityViewerV2/sample/Main$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GravityViewerV2/sample/Main$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GravityViewerV2/sample/Main$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GravityViewerV2/sample/Main$5.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/GravityViewerV2/sample/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GravityViewerV2/sample/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GravityViewerV2/sample/Particle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GravityViewerV2/sample/Particle.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/OctTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/OctTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Particle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Particle.java" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -74,25 +65,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="331" lean-forward="true" selection-start-line="331" selection-end-line="331" />
+            <state relative-caret-position="238">
+              <caret line="50" column="56" lean-forward="true" selection-start-line="50" selection-start-column="56" selection-end-line="50" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#11670#11671#0" expanded="true" />
-                <element signature="e#11698#11699#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/javafx-src.zip!/javafx/scene/Group.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1033">
-              <caret line="151" column="42" selection-start-line="151" selection-start-column="42" selection-end-line="151" selection-end-column="42" />
-              <folding>
-                <element signature="e#4175#4176#0" expanded="true" />
-                <element signature="e#4217#4218#0" expanded="true" />
+                <element signature="e#5874#5875#0" expanded="true" />
+                <element signature="e#11810#11811#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -102,7 +80,7 @@
         <entry file="file://$PROJECT_DIR$/src/sample/OctTree.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
-              <caret line="26" column="41" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
+              <caret line="26" column="42" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -250,8 +228,8 @@
         <option value="$PROJECT_DIR$/src/sample/Engine.java" />
         <option value="$PROJECT_DIR$/src/sample/DrawScreen.java" />
         <option value="$PROJECT_DIR$/src/sample/Particle.java" />
-        <option value="$PROJECT_DIR$/src/sample/OctTree.java" />
         <option value="$PROJECT_DIR$/src/sample/Main.java" />
+        <option value="$PROJECT_DIR$/src/sample/OctTree.java" />
       </list>
     </option>
   </component>
@@ -310,7 +288,7 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566620545381" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566628240740" />
     <property name="dynamic.classpath" value="false" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -564,7 +542,7 @@
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.19919029" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.19919029" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" />
       <window_info id="Designer" order="3" />
@@ -573,7 +551,7 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.19538188" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.20959148" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.25577265" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -624,12 +602,6 @@
           <line>112</line>
           <properties />
           <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/sample/Main.java</url>
-          <line>148</line>
-          <properties />
-          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -776,31 +748,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/OctTree.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/RK4Solver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="26" column="41" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="85">
+          <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/javafx-src.zip!/javafx/scene/Group.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1033">
+        <state relative-caret-position="-958">
           <caret line="151" column="42" selection-start-line="151" selection-start-column="42" selection-end-line="151" selection-end-column="42" />
           <folding>
             <element signature="e#4175#4176#0" expanded="true" />
             <element signature="e#4217#4218#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/RK4Solver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -811,14 +773,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/OctTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="331" lean-forward="true" selection-start-line="331" selection-end-line="331" />
+        <state relative-caret-position="187">
+          <caret line="26" column="42" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#11670#11671#0" expanded="true" />
-            <element signature="e#11698#11699#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="50" column="56" lean-forward="true" selection-start-line="50" selection-start-column="56" selection-end-line="50" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5874#5875#0" expanded="true" />
+            <element signature="e#11810#11811#0" expanded="true" />
           </folding>
         </state>
       </provider>

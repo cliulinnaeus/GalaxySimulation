@@ -24,7 +24,7 @@ public class OctTree {
     // theta is the ratio of s/d, s is the width of the region, d is the distance from
     // node to the particle
     // if s/d < theta, don't do recursion
-    public final static double THETA = 20;
+    public final static double THETA = 1000;
 
     public OctTree(Octant octant) {
         this.octant = octant;

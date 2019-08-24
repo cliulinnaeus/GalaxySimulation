@@ -37,10 +37,12 @@ public class Main extends Application {
     final Xform cameraXform = new Xform();
     final Xform cameraXform2 = new Xform();
     final Xform cameraXform3 = new Xform();
-    private static final double AXIS_LENGTH = 250.0;
-    private static final int WORLD_SIZE = 1000;
-    private static final int STAR_COUNT = 3;
-    private static final double CAMERA_INITIAL_DISTANCE = -WORLD_SIZE * 5;
+    private static Timeline loop;
+    private static boolean paused = true;
+    private static final int WORLD_SIZE = 20000;
+    private static final int STAR_COUNT = 10000;
+    private static final double AXIS_LENGTH = WORLD_SIZE;
+    private static final double CAMERA_INITIAL_DISTANCE = -WORLD_SIZE * 3;
     private static final double CAMERA_INITIAL_X_ANGLE = 30.0;
     private static final double CAMERA_INITIAL_Y_ANGLE = 300.0;
     private static final double CAMERA_NEAR_CLIP = 0.1;
@@ -128,7 +130,7 @@ public class Main extends Application {
             } else if (1 <= luminosity && luminosity < 500) {
                 color = Color.WHITE;
             } else if (500 <= luminosity && luminosity < 1000) {
-                color = Color.LIGHTBLUE;
+                color = Color.GREEN;
             } else {
                 color = Color.LIGHTBLUE;
             }
@@ -137,8 +139,6 @@ public class Main extends Application {
             material.setSpecularColor(color);
             material.setDiffuseColor(color.brighter());
 
-            Xform starForm = new Xform();
-
             Sphere starSphere = new Sphere(p.radius);
 
             starSphere.setMaterial(material);
@@ -146,19 +146,23 @@ public class Main extends Application {
             starSphere.setTranslateY(p.ry);
             starSphere.setTranslateZ(p.rz);
 
-//            starForm.getChildren().add(starSphere);
 
             particleGroup.getChildren().add(starSphere);
         }
             world.getChildren().add(particleGroup);
-
-
-
-
-
-
-
     }
+
+    public void updateParticles(Group pGroup, List<Particle> pList) {
+        for (int i = 0; i < pList.size(); i++) {
+            Particle p = pList.get(i);
+            Node n = pGroup.getChildren().get(i);
+            n.setTranslateX(p.rx);
+            n.setTranslateY(p.ry);
+            n.setTranslateZ(p.rz);
+
+        }
+    }
+
 
 
     public void clearParticles() {
@@ -167,6 +171,7 @@ public class Main extends Application {
 
 
     public void handleKeyboard(Scene scene) {
+
         scene.setOnKeyPressed(new EventHandler<KeyEvent>() {
             @Override
             public void handle(KeyEvent event) {
@@ -186,6 +191,13 @@ public class Main extends Application {
                     case V:
                         particleGroup.setVisible(!particleGroup.isVisible());
                         break;
+                    case P:
+                        if (!paused) {
+                            loop.pause();
+                        } else {
+                            loop.play();
+                        }
+                        paused = !paused;
                 }
             }
         });
@@ -251,13 +263,13 @@ public class Main extends Application {
             double rx = random.nextInt(WORLD_SIZE) - WORLD_SIZE / 2;
             double ry = random.nextInt(WORLD_SIZE) - WORLD_SIZE / 2;
             double rz = random.nextInt(WORLD_SIZE) - WORLD_SIZE / 2;
-            double vx = random.nextInt(12) - 6;
-            double vy = random.nextInt(12) - 6;
-            double vz = random.nextInt(12) - 6;
+            double vx = random.nextInt(500) - 250;
+            double vy = random.nextInt(500) - 250;
+            double vz = random.nextInt(500) - 250;
 //            double vx = 0;
 //            double vy = 0;
 //            double vz = 0;
-            double mass = random.nextInt(100) + 1;
+            double mass = random.nextInt(100) + 0.1;
             double radius = random.nextInt(30);
             Particle p = new Particle(rx, ry, rz, vx, vy, vz, mass, radius);
             particleList.add(p);
@@ -273,14 +285,13 @@ public class Main extends Application {
 
         root.getChildren().add(world);
         root.setDepthTest(DepthTest.ENABLE);
-        world.getChildren().removeAll(particleGroup);
 
 
         List<Particle> pList = makeParticleList(STAR_COUNT);
 
         buildCamera();
         buildAxes();
-        buildParticles(pList);
+//        buildParticles(pList);
 
 
 //        Timeline tl = new Timeline();
@@ -292,25 +303,23 @@ public class Main extends Application {
 
         // _______________________________________________ running simulator
 
-        Timeline loop = new Timeline(new KeyFrame(Duration.millis(10), event -> {
+        loop = new Timeline(new KeyFrame(Duration.millis(10), event -> {
 
+
+//            world.getChildren().removeAll(particleGroup);
             engine.stepForward();
-            buildParticles(pList);
+//            buildParticles(pList);
 
+            updateParticles(particleGroup, pList);
         }));
 
         loop.setCycleCount(Timeline.INDEFINITE);
-        loop.play();
-
-
-
-
-
-
-
-
-
-
+        if (!paused) {
+            loop.play();
+        } else {
+            buildParticles(pList);
+//            root.getChildren().removeAll();
+        }
 
         //________________________________________________
 

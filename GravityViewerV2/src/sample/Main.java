@@ -40,7 +40,7 @@ public class Main extends Application {
     private static Timeline loop;
     private static boolean paused = true;
     private static final int WORLD_SIZE = 10000;
-    private static final int STAR_COUNT = 3000;
+    private static final int STAR_COUNT = 5000;
     private static final double AXIS_LENGTH = WORLD_SIZE;
     private static final double CAMERA_INITIAL_DISTANCE = -WORLD_SIZE * 3;
     private static final double CAMERA_INITIAL_X_ANGLE = 30.0;
@@ -236,8 +236,9 @@ public class Main extends Application {
                 else if (me.isPrimaryButtonDown()) {
                     double x = camera.getTranslateX();
                     double y = camera.getTranslateY();
-                    double newX = x - mouseDeltaX*MOUSE_SPEED*modifier;
-                    double newY = y - mouseDeltaY*MOUSE_SPEED*modifier;
+                    double z = camera.getTranslateZ();
+                    double newX = x - mouseDeltaX*MOUSE_SPEED*modifier * Math.log(Math.abs(z)) * 2;
+                    double newY = y - mouseDeltaY*MOUSE_SPEED*modifier * Math.log(Math.abs(z)) * 2;
                     camera.setTranslateX(newX);
                     camera.setTranslateY(newY);
                 }
@@ -250,7 +251,8 @@ public class Main extends Application {
             @Override
             public void handle(ScrollEvent event) {
                 double z = camera.getTranslateZ();
-                double newZ = z + event.getDeltaY();
+                double newZ = z + event.getDeltaY() * Math.log(Math.abs(z));
+                System.out.println(camera.getTranslateZ());
                 camera.setTranslateZ(newZ);
             }
         });
@@ -267,12 +269,12 @@ public class Main extends Application {
 //            double vx = random.nextInt(500) - 250;
 //            double vy = random.nextInt(500) - 250;
 //            double vz = random.nextInt(500) - 250;
-            double vx = -ry /3;
-            double vy = rx /3;
-            double vz = random.nextInt(50) - 25;
-//            double vx = 0;
-//            double vy = 0;
-//            double vz = 0;
+//            double vx = -ry /3;
+//            double vy = rx /3;
+//            double vz = random.nextInt(50) - 25;
+            double vx = 0;
+            double vy = 0;
+            double vz = 0;
             double mass = random.nextInt(1000) + 0.1;
             double radius = random.nextInt(100);
             Particle p = new Particle(rx, ry, rz, vx, vy, vz, mass, radius);

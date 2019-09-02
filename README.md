@@ -5,3 +5,6 @@ Feel free to give any feedbacks.
 
 
 To run it, use JavaFX 8 
+
+
+![Simulation with 5000 particles](C:\Users\CheLiu\Desktop\img.PNG)
